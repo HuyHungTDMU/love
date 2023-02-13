@@ -10,7 +10,7 @@ const sparkleGrowColors = [
   "#92E8C5",
   "#CDEB8E",
   "#2AD492",
-  "#D79DF3"
+  "#D79DF3",
 ];
 const sparkleMoveColors = [
   "#E187D2",
@@ -19,7 +19,7 @@ const sparkleMoveColors = [
   "#9ECA98",
   "#35A0F0",
   "#BADAB0",
-  "#33B6E9"
+  "#33B6E9",
 ];
 
 const IconWrapper = styled.div`
@@ -36,19 +36,19 @@ const IconWrapper = styled.div`
 class Heart extends React.Component {
   componentDidMount() {
     TweenMax.set("svg", {
-      visibility: "visible"
+      visibility: "visible",
     });
 
     const tl = new TimelineMax({ paused: true });
     tl.from("#pinkDot", 1, {
       attr: {
-        r: 0
-      }
+        r: 0,
+      },
     })
       .set(
         "#greyHeart",
         {
-          fill: "none"
+          fill: "none",
         },
         "-=0.99"
       )
@@ -56,7 +56,7 @@ class Heart extends React.Component {
         "#pinkDot",
         1,
         {
-          fill: "#CD8FF7"
+          fill: "#CD8FF7",
         },
         "-=1"
       )
@@ -65,8 +65,8 @@ class Heart extends React.Component {
         1,
         {
           attr: {
-            r: 67
-          }
+            r: 67,
+          },
         },
         "-=0.5"
       )
@@ -76,14 +76,14 @@ class Heart extends React.Component {
         {
           scale: 0,
           transformOrigin: "50% 50%",
-          ease: Back.easeOut.config(1.2)
+          ease: Back.easeOut.config(1.2),
         },
         "-=0.5"
       )
       .set(
         ["#sparkleGrowGroup", "#sparkleMoveGroup"],
         {
-          alpha: 1
+          alpha: 1,
         },
         "-=1.5"
       )
@@ -92,7 +92,7 @@ class Heart extends React.Component {
         1,
         {
           scale: 1.5,
-          transformOrigin: "50% 50%"
+          transformOrigin: "50% 50%",
         },
         "-=1.5"
       )
@@ -101,7 +101,7 @@ class Heart extends React.Component {
         1,
         {
           scale: 1.2,
-          transformOrigin: "50% 50%"
+          transformOrigin: "50% 50%",
         },
         "-=1.5"
       )
@@ -110,13 +110,13 @@ class Heart extends React.Component {
         2,
         {
           attr: {
-            r: 0
+            r: 0,
           },
           cycle: {
             fill: function (i) {
               return sparkleGrowColors[i];
-            }
-          }
+            },
+          },
         },
         0,
         "-=0.9"
@@ -126,13 +126,13 @@ class Heart extends React.Component {
         0.8,
         {
           attr: {
-            r: 0
+            r: 0,
           },
           cycle: {
             fill: function (i) {
               return sparkleMoveColors[i];
-            }
-          }
+            },
+          },
         },
         0,
         "-=2"
@@ -162,7 +162,7 @@ class Heart extends React.Component {
           style={{
             width: 100,
             height: 100,
-            visibility: "hidden"
+            visibility: "hidden",
           }}
         >
           <defs>
@@ -213,7 +213,7 @@ class App extends React.Component {
     super();
 
     this.state = {
-      liked: false
+      liked: false,
     };
   }
 
@@ -224,25 +224,35 @@ class App extends React.Component {
           style={{
             display: "flex",
             justifyContent: "center",
-            alignItems: "center"
+            alignItems: "center",
           }}
         >
           🤴 <Heart liked={this.state.liked} /> 👸
         </div>
-        
-        <h1 style={{ color: "#fff" }}>
+
+        <h5
+          style={{
+            color: "#fff",
+            padding: 25,
+            fontWeight: "normal",
+            lineHeight: "25px",
+          }}
+        >
           {this.state.liked
-            ? "HI baby, I am really sorry. I was a big dick. Thank you so much for helping me youre the best. I always do this, always demean you but that is just the moment of frustration baby. you always treat me so nicely, teach me aptitude. you are really great baby. i was really harsh to you and i am really sorry. You saved me. really. Thank you :) you are the best baby. if possible forgive me baby :/ I really love you. I will try to be better for you baby. I was really bad. I am genuinelly sorry. Thanks for trying despite me being an ass baby. I really dont deserve you :("
+            ? `
+            
+            `
             : ""}
-        </h1>
-
-        <button style={{backgroundColor: 'rgba(0,0,0,0)'}} onClick={() => this.setState({ liked: !this.state.liked })}>
-          {this.state.liked ? "📤" : "✉️"}
-        </button>   
-
-        <h5 style={{ color: "#fff", paddingTop: 30, paddingBottom: 70 }}>
-          Ký tên Hy Hùn 🖊
         </h5>
+
+        <button
+          style={{ backgroundColor: "rgba(0,0,0,0)" }}
+          onClick={() => this.setState({ liked: !this.state.liked })}
+        >
+          {this.state.liked ? "📤" : "✉️"}
+        </button>
+
+        <h5 style={{ color: "#fff", paddingBottom: 50 }}>Ký tên Hy Hùn 🖊</h5>
       </div>
     );
   }
