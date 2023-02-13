@@ -227,7 +227,7 @@ class App extends React.Component {
             alignItems: "center"
           }}
         >
-          <Heart liked={this.state.liked} />
+          🤴 <Heart liked={this.state.liked} /> 👸
         </div>
         <h1 style={{ color: "#fff" }}>
           {this.state.liked

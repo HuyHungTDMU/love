@@ -8,7 +8,10 @@ const src =
 
 export default function App() {
   return (
-    <div className="App" style={{ backgroundColor: "#000", position: 'absolute' }}>
+    <div
+      className="App"
+      style={{ backgroundColor: "#000", position: "relative" }}
+    >
       <ParticleImage
         scale={0.5}
         maxParticles={5000}
@@ -30,10 +33,22 @@ export default function App() {
               canvasDimensions.width / 9,
               canvasDimensions.height / 2
             );
-          }
+          },
         }}
       />
-      <h6 style={{color:'pink', fontSize: 8, fontWeight: 8, position:'relative', left: 0, right: 0}}>H ♡ K</h6>
+      <h6
+        style={{
+          color: "pink",
+          fontSize: 8,
+          fontWeight: 8,
+          position: "absolute",
+          left: 0,
+          right: 0,
+          top: 170,
+        }}
+      >
+        H ♡ K
+      </h6>
       <div>
         <Love />
       </div>
