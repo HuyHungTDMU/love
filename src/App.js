@@ -10,7 +10,7 @@ export default function App() {
   return (
     <div
       className="App"
-      style={{ backgroundColor: "#000", position: "relative" }}
+      style={{ backgroundColor: "#000", position: "relative", paddingTop: 10 }}
     >
       <ParticleImage
         scale={0.5}
