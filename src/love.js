@@ -37,7 +37,7 @@ const buttonStyle = {
 export const Wave1 = () => (
   <div style={exampleStyle}>
     <Wave
-      text="I LOVE YOU, PLEASE FORGIVE ME"
+      text="Happy Valentine's Day "
       effect="fadeOut"
       effectChange={1.0}
     />
