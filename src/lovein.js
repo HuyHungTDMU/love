@@ -9,7 +9,6 @@ const styles = {
 
 const App = () => (
   <div style={styles}>
-    <h1>Examples of react-animated-text:</h1>
     <Wave1 />
   </div>
 );

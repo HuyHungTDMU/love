@@ -8,8 +8,7 @@ const src =
 
 export default function App() {
   return (
-    <div className="App" style={{ backgroundColor: "#000" }}>
-      <h1 style={{ color: "#fff" }}>I LOVE U</h1>
+    <div className="App" style={{ backgroundColor: "#000", position: 'absolute' }}>
       <ParticleImage
         scale={0.5}
         maxParticles={5000}
@@ -34,6 +33,7 @@ export default function App() {
           }
         }}
       />
+      <h6 style={{color:'pink', fontSize: 8, fontWeight: 8, position:'relative', left: 0, right: 0}}>H ♡ K</h6>
       <div>
         <Love />
       </div>

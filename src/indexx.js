@@ -232,11 +232,14 @@ class App extends React.Component {
         <h1 style={{ color: "#fff" }}>
           {this.state.liked
             ? "HI baby, I am really sorry. I was a big dick. Thank you so much for helping me youre the best. I always do this, always demean you but that is just the moment of frustration baby. you always treat me so nicely, teach me aptitude. you are really great baby. i was really harsh to you and i am really sorry. You saved me. really. Thank you :) you are the best baby. if possible forgive me baby :/ I really love you. I will try to be better for you baby. I was really bad. I am genuinelly sorry. Thanks for trying despite me being an ass baby. I really dont deserve you :("
-            : "click below"}
+            : ""}
         </h1>
         <button onClick={() => this.setState({ liked: !this.state.liked })}>
-          {this.state.liked ? "go back" : "go"}
-        </button>
+          {this.state.liked ? "📤" : "✉️"}
+        </button>      
+        <h5 style={{ color: "#fff", marginTop: 30, marginBottom: 70 }}>
+          Ký tên Hy Hùn 🖊
+        </h5>
       </div>
     );
   }
