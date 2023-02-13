@@ -237,7 +237,7 @@ class App extends React.Component {
         <button style={{backgroundColor: 'rgba(0,0,0,0)'}} onClick={() => this.setState({ liked: !this.state.liked })}>
           {this.state.liked ? "📤" : "✉️"}
         </button>      
-        <h5 style={{ color: "#fff", marginTop: 30, marginBottom: 70 }}>
+        <h5 style={{ color: "#fff", paddingTop: 30, paddingBottom: 70 }}>
           Ký tên Hy Hùn 🖊
         </h5>
       </div>
