@@ -254,7 +254,7 @@ class App extends React.Component {
             là ngay lập tức chạy đến... \n 
             và kéo bạn ôm vào lòng. \n 
             \n 
-            Anh hạnh phúc khi có em ở trong quộc đời này ♡. \n 
+            Anh hạnh phúc khi có em ở trong cuộc đời này ♡. \n 
             Yêu em 'Thiên Kiều' \n 
             \n 
             Ký tên papii cụa iêm 'Hy Hùn đẹp trai' 🖊
