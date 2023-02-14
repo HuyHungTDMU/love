@@ -233,14 +233,31 @@ class App extends React.Component {
         <h5
           style={{
             color: "#fff",
-            padding: 25,
+            padding: 15,
+            lineHeight: "20px",
             fontWeight: "normal",
-            lineHeight: "25px",
+            whiteSpace: "pre-line",
           }}
         >
           {this.state.liked
             ? `
-            
+            Chúng ta đến cuối cùng cũng gặp được một người như thế này... \n 
+            Người ấy sẽ đến và bước vào quộc đời của bạn \n 
+            Người đó sẽ cùng bạn dọn dẹp một mớ ngổn ngang ký ức trong tim bạn \n 
+            Sẵn sàng đón đưa, nhắc nhở bạn ăn đủ bữa \n 
+            Là người có thể cầm sẵn ô cho bạn những lúc trời mưa \n 
+            Hay là cái bóng râm cho bạn núp vào một ngày nắng nóng nào đấy \n 
+            Là người kiên nhẫn ngồi lắng nghe bạn thủ thỉ từng câu chuyện nhỏ... \n 
+            ...bạn đã trải qua như thế nào, chịu đựng ra sao \n 
+            Và là người chỉ cần bạn nói... \n 
+            "hôm nay, tự nhiên em nhớ anh quá" \n 
+            là ngay lập tức chạy đến... \n 
+            và kéo bạn ôm vào lòng. \n 
+            \n 
+            Anh hạnh phúc khi có em ở trong quộc đời này ♡. \n 
+            Yêu em 'Thiên Kiều' \n 
+            \n 
+            Ký tên papii cụa iêm 'Hy Hùn đẹp trai' 🖊
             `
             : ""}
         </h5>
@@ -252,7 +269,7 @@ class App extends React.Component {
           {this.state.liked ? "📤" : "✉️"}
         </button>
 
-        <h5 style={{ color: "#fff", paddingBottom: 50 }}>Ký tên Hy Hùn 🖊</h5>
+        <h5 style={{ color: "#fff", paddingBottom: 50 }}>...</h5>
       </div>
     );
   }
