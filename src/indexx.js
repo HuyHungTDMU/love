@@ -242,7 +242,7 @@ class App extends React.Component {
           {this.state.liked
             ? `
             Chúng ta đến cuối cùng cũng gặp được một người như thế này... \n 
-            Người ấy sẽ đến và bước vào quộc đời của bạn \n 
+            Người ấy sẽ đến và bước vào cuộc đời của bạn \n 
             Người đó sẽ cùng bạn dọn dẹp một mớ ngổn ngang ký ức trong tim bạn \n 
             Sẵn sàng đón đưa, nhắc nhở bạn ăn đủ bữa \n 
             Là người có thể cầm sẵn ô cho bạn những lúc trời mưa \n 
